@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="calc-style.css" />
 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+    <script type="module" src="./controller.js"></script>
+
     <title>Calculadora</title>
   </head>
 
@@ -21,32 +24,32 @@
       <div class="calc-body">
         <!-- Calculator Display Screen -->
         <div class="calc-screen">
-          <div id="calc-operation">1234 + 567 +</div>
-          <div id="calc-typed">890</div>
+          <div id="calc-operation"></div>
+          <div id="calc-typed">0</div>
         </div>
 
         <!-- Calculator Buttons -->
         <div class="calc-button-row">
-          <button class="ac">AC</button>
-          <button class="opt">&#43;&#47;&#8722;</button>
-          <button class="opt">&#37;</button>
-          <button class="opt">&#247;</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button class="opt">&#215;</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button class="opt">&#8722;</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button class="opt">&#43;</button>
-          <button>0</button>
-          <button>.</button>
-          <button>&#9003;</button>
-          <button class="opt">&#61;</button>
+          <button id="ac" class="ac">AC</button>
+          <button id="+/-" class="opt">&#43;&#47;&#8722;</button>
+          <button id="%" value="%" class="opt">&#37;</button>
+          <button id="/" value="/" class="opt">&#247;</button>
+          <button id="7">7</button>
+          <button id="8">8</button>
+          <button id="9">9</button>
+          <button id="*" value="*" class="opt">&#215;</button>
+          <button id="4">4</button>
+          <button id="5">5</button>
+          <button id="6">6</button>
+          <button id="-" value="-" class="opt">&#8722;</button>
+          <button id="1">1</button>
+          <button id="2">2</button>
+          <button id="3">3</button>
+          <button id="+" value="+" class="opt">&#43;</button>
+          <button id="0">0</button>
+          <button id="." value=".">.</button>
+          <button id="clean">&#9003;</button>
+          <button id="operate" class="opt">&#61;</button>
         </div>
       </div>
     </section>
